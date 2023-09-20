@@ -1,0 +1,42 @@
+/*==================== HEADER ====================*/
+.icon__bar {
+ display: none;
+}
+@media screen and (max-width: 767px) {
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--first-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px  4px rgba(0,0,0, .15);
+    transition: 0.3s;
+    padding: 10px 10px;
+    z-index: 1;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .icon__bar {
+   display: block;
+   font-size: 2rem;
+   font-weight: 600;
+   color: white;
+  }
+
+  .btn-icon {
+   display: none;
+  }
+
+  .nav__menu {
+   transition: .4s;
+   position: absolute;
+   width: 100%;
+   height: max-content;
+   background-color: red;
+  }
+}
